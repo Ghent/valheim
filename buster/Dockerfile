@@ -15,10 +15,10 @@ RUN set -x \
     && chmod +x "${HOMEDIR}/entry.sh" \
     && chown -R "${USER}:${USER}" "${HOMEDIR}/entry.sh" "${STEAMAPPDIR}"
 
-ENV SERVER_NAME="${USER}'s Valheim Server"
-    SERVER_PORT=2456
-    SERVER_WORLD="Dedicated"
-    SERVER_PASSWORD="changeme"
+ENV SERVER_NAME="${USER}'s Valheim Server" \
+    SERVER_PORT=2456 \
+    SERVER_WORLD="Dedicated" \
+    SERVER_PASSWORD="changeme" \
     SERVER_PUB=1
 
 USER ${USER}
