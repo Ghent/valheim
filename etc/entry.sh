@@ -9,7 +9,7 @@ bash "${STEAMCMDDIR}/steamcmd.sh" +login anonymous \
                 +app_update "${STEAMAPPID}" \
                 +quit
 
-cd "${STEAMAPPID}"
+cd "${STEAMAPPDIR}"
 
 # NOTE: Minimum password length is 5 characters & Password cant be in the server name.
 ./valheim_server.x86_64 -name "${SERVER_NAME}" -port ${SERVER_PORT} -world "${SERVER_WORLD}" -password "${SERVER_PASSWORD}" -public ${SERVER_PUB}
