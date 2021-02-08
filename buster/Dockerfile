@@ -1,6 +1,6 @@
 # Dockerfile that builds a Valheim dedicated server
 # Inspired by CM2Walki - https://github.com/CM2Walki
-FROM cm2network/steamcmd:latest
+FROM cm2network/steamcmd:root
 
 LABEL maintainer="ghentlinux@gmail.com"
 
